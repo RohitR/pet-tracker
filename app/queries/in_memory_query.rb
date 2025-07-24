@@ -17,4 +17,8 @@ class InMemoryQuery
   def count
     @data.size
   end
+
+  def group(*fields)
+    GroupedInMemoryQuery.new(@data, fields)
+  end
 end
