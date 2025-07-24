@@ -11,7 +11,7 @@ class Api::V1::PetsController < ApplicationController
   def search
     @pets = pet_repo.where(pet_params.to_h).to_a
     if @pets.empty?
-      render json: { error: 'No pets found' }, status: :not_found
+      render json: { error: "No pets found" }, status: :not_found
     else
       render json: @pets, status: :ok
     end
@@ -23,7 +23,7 @@ class Api::V1::PetsController < ApplicationController
   end
 
   private
-  
+
   def pet_params
     params.require(:pet).permit(:type, :tracker_type, :owner_id, :in_zone, :lost_tracker)
   end

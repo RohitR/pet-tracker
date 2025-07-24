@@ -4,9 +4,9 @@ module TrackerType
 
   def self.valid_for?(type, tracker_type)
     case type
-    when 'cat'
+    when "cat"
       CAT_TYPES.include?(tracker_type)
-    when 'dog'
+    when "dog"
       DOG_TYPES.include?(tracker_type)
     else
       false
@@ -15,9 +15,9 @@ module TrackerType
 
   def self.all_for(type)
     case type
-    when 'cat'
+    when "cat"
       CAT_TYPES
-    when 'dog'
+    when "dog"
       DOG_TYPES
     else
       []
