@@ -2,7 +2,7 @@
 
 This project is a Ruby on Rails API-only application running on:
 
-- **Ruby version:** 3.1.5  
+- **Ruby version:** 3.4.0  
 - **Rails version:** 7.2
 
 ---
