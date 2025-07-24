@@ -25,6 +25,8 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 
 group :development, :test do
+
+  gem "rspec-rails", "~> 5.0" # RSpec for Rails [
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
